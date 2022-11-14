@@ -1,0 +1,20 @@
+body{
+    font: 14px Georgia, serif;
+}
+#page-wrap {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#shop input {
+    vertical-align: middle;
+}
+#shop ol {
+    margin: 0 0 10px 20px;
+}
+#shop ol li {
+    margin: 0 0 20px 0;
+}
+#shop ol li div {
+    padding: 4px 0;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=UTF-8" />
+    <title>MARKETPLACE</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="page-wrap">
+        <form action="customerBackEnd.php" method="post" id="shop" name="form">
+            <ol>
+                <li>
+                    <h1>Create a login:</h1>
+                    <div>
+                        <label for="uName">Username:</label>
+                        <input type="text" id="uName" name="uName" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br>
+					</div>
+					<div>
+                        <label for="pWord">Password:</label>
+                        <input type="text" id="pWord" name="pWord" required><br>
+                    </div>					
+                </li>
+				<li>
+					<h1>Which item would you like to purchase?</h1>
+					<div>
+                  	  	<input type="checkbox" name="item-option-1" id="item-option-1" value="Thirteen" />
+                  	  	<label for="item-option-1"><img src="images/iphone13.jpeg" width="150" id="jayhawks"/>Iphone Thirteen - $399.99</label>
+					</div>
+					<div>
+                  	  	<input type="checkbox" name="item-option-2" id="item-option-2" value="Twelve" />
+                  	  	<label for="item-option-2"><img src="iphone_12.png" width="150" id="tigers"/>Iphone Twelve - $299.99</label>
+					</div>
+					<div>
+                  	  	<input type="checkbox" name="item-option-3" id="item-option-3" value="Ten" />
+                  	  	<label for="item-option-3"><img src="iphone10.png" width="150" id="wildcats"/>Iphone Ten - $99.99</label>
+					</div>
+				</li>
+				<li>
+					<h1>Which shipping option would you like?</h1>
+					<div>
+                  	  	<input type="radio" name="ship-options" id="ship-option-1" value="free" required/>
+                  	  	<label for="item-option-1">Free 7 day</label>
+					</div>
+					<div>
+                  	  	<input type="radio" name="ship-options" id="ship-option-2" value="50" />
+                  	  	<label for="item-option-2">$50.00 Overnight</label>
+					</div>
+					<div>
+                  	  	<input type="radio" name="ship-options" id="ship-option-3" value="5" />
+                  	  	<label for="item-option-3">$5.00 3 Day</label>
+					</div>  
+				</li>		
+            </ol>	
+			<input type="submit" value="Submit" class="submitbtn"/>	
+        </form>
+    </div>
+</body>
+</html>
